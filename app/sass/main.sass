@@ -1,0 +1,184 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+ul
+	list-style-type: none
+	margin: 0
+
+a
+	color: $text
+	&:hover
+		text-decoration: none
+
+section
+	margin-top: 160px
+
+.popup_button
+		padding: 10px 80px
+		text-align: center
+		color: #000000
+		font-weight: bold
+// Custom CSS
+
+header
+	display: flex
+	flex-direction: column
+	height: 100vh
+	background-image: url(../img/header_bg.png)
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+.top_nav
+	background-color: #e5e6e6
+	opacity: 0.8
+	ul
+		display: flex
+		justify-content: space-around
+		padding: 30px
+		a
+			text-transform: uppercase
+			text-align: center
+			color: #606060
+			font-size: 24px
+			font-family: $title-font
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 2px
+				background-color: $accent
+				transform: translateY(10px) scale(0)
+				transition: all 0.6s
+			&:hover
+				color: #000000
+				&:after
+					transform: translateY(10px) scale(1)
+			
+.logo
+	margin: auto
+
+.discography-text_box 
+	text-align: center
+	h2
+		font-size: 50px
+		color: #9b6e51
+		font-family: $title-font
+		font-weight: 100
+		// text-decoration: line-through
+		padding-bottom: 50px
+		&:after
+			content: ''
+			display: block
+			text-align: center
+			width: 100%
+			height: 2px
+			background-color: $accent	
+			transform: translateY(-41px) scale(0.5)
+
+.discography-text_date
+	margin-top: 150px
+	b
+		text-transform: uppercase
+		color: $accent
+	h3
+		font-size: 23px
+		color: $accent
+	.popup-youtube
+		padding: 10px 80px
+		text-align: center
+		color: #ffffff
+		font-weight: bold
+		background-image: url(../img/button-1.png)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		&__naightvision
+			background-image: url(../img/button-2.png)
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+
+		&__smokemirrors
+			background-image: url(../img/button-3.png)
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+
+.discography_bg
+	width: 100%
+	height: 550px
+	margin-top: 50px
+	background-image: url(../img/discography_bg.png)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+.mfp-fade.mfp-bg
+	opacity: 0
+	-webkit-transition: all 0.15s ease-out
+	-moz-transition: all 0.15s ease-out
+	transition: all 0.15s ease-out
+.mfp-fade.mfp-bg.mfp-ready
+	opacity: 0.8
+.mfp-fade.mfp-bg.mfp-removing
+	opacity: 0
+.mfp-fade.mfp-wrap .mfp-content
+	opacity: 0
+	-webkit-transition: all 0.15s ease-out
+	-moz-transition: all 0.15s ease-out
+	transition: all 0.15s ease-out
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+	opacity: 1
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+	opacity: 0
+		
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end
